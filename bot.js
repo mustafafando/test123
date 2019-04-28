@@ -28,10 +28,10 @@ client.on("message", message => {
      const embed = new Discord.RichEmbed() 
          .setColor("#580e6b")
          .setThumbnail(message.author.avatarURL)
-         .setDescription(`** SYG «Â·« Ê”Â·« ›Ìﬂ ›Ì ”Ì—›— 
+         .setDescription(`** SYG √á√•√°√á √¶√ì√•√°√á √ù√≠√ü √ù√≠ √ì√≠√ë√ù√ë 
 		 ------------------------------
 $invites 
-| ·„⁄—›… «·«‘Œ«’ «·–Ì œ⁄Ê Â„		 **`)
+| √°√£√ö√ë√ù√â √á√°√á√î√é√á√ï √á√°√ê√≠ √è√ö√¶√ä√•√£		 **`)
    message.author.sendEmbed(embed)
    
    }
@@ -52,9 +52,9 @@ client.on('message', message => {
             message.guild.members.forEach(m => {
        if(!message.member.hasPermission('ADMINISTRATOR')) return;
                 var bc = new Discord.RichEmbed()
-                .addField('ª «·”Ì—›— :', `${message.guild.name}`)
-                .addField('ª «·„—”· : ', `${message.author.username}#${message.author.discriminator}`)
-                .addField(' ª «·—”«·… : ', args)
+                .addField('¬ª √á√°√ì√≠√ë√ù√ë :', `${message.guild.name}`)
+                .addField('¬ª √á√°√£√ë√ì√° : ', `${message.author.username}#${message.author.discriminator}`)
+                .addField(' ¬ª √á√°√ë√ì√á√°√â : ', args)
                 .setColor('#ff0000')
                 // m.send(`[${m}]`);
                 m.send(`${m}`,{embed: bc});
@@ -72,13 +72,13 @@ client.on('message', message => {
         .setColor('RANDOM')
         .setThumbnail(memberavatar)
         .addField('?? | name :  ',`${member}`)
-        .addField('?? | ‰Ê—  «·”Ì—›— Ì« ﬁ·»Ì' , `Welcome to the server, ${member}`)
+        .addField('?? | √§√¶√ë√ä √á√°√ì√≠√ë√ù√ë √≠√á √û√°√à√≠' , `Welcome to the server, ${member}`)
         .addField('?? | user :', "**[" + `${member.id}` + "]**" )
-                .addField('?| «‰  «·⁄÷Ê —ﬁ„',`${member.guild.memberCount}`)
+                .addField('?| √á√§√ä √á√°√ö√ñ√¶ √ë√û√£',`${member.guild.memberCount}`)
                
                   .addField("Name:",`<@` + `${member.id}` + `>`, true)
                      
-                                     .addField(' «·‹”Ì—›—', `${member.guild.name}`,true)
+                                     .addField(' √á√°√ú√ì√≠√ë√ù√ë', `${member.guild.name}`,true)
                                        
      .setFooter(`${member.guild.name}`)
         .setTimestamp()
@@ -101,7 +101,7 @@ client.on('message', message => {
       let member = client.guilds.get(message.guild.id).members.get(message.author.id);
       let personalInvites = invs.filter(i => i.inviter.id === message.author.id);
       let inviteCount = personalInvites.reduce((p, v) => v.uses + p, 0);
-    return message.reply(`**${inviteCount}: ⁄œœ «·«‘Œ«’ «·–Ì œ⁄Ê Â„ ÂÊ**`)
+    return message.reply(`**${inviteCount}: √ö√è√è √á√°√á√î√é√á√ï √á√°√ê√≠ √è√ö√¶√ä√•√£ √•√¶**`)
 
 });
 }}); 
